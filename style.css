@@ -52,6 +52,7 @@ body {
 .nav__link--inside {
   border-radius: 5px 0 0 5px;
   padding-left: 20px;
+  text-align: left;
 }
 .list {
   width: 100%;
