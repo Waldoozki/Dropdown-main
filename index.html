@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/menu-icon.png" type="image/x-icon">
+  <title>Dropdown-main</title>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav__container">
+      <h1 class="nav__title">Waldoozvi</h1>
+      <label for="menu" class="nav__label">
+        <img src="img/bx-menu.svg" alt="icon-menu" class="nav__menu">
+      </label>
+      <!-- <input type="checkbox" id="menu" class="nav__input"> -->
+    </div>
+    <input type="checkbox" id="menu" class="nav__input">
+    <ul class="list">
+      <li class="list__item">
+        <div class="list__button">
+          <img src="img/bxs-dashboard.svg" alt="bxs-dashboard" class="list__img">
+          <a href="#" class="nav__link">Inicio</a>
+        </div>
+      </li>
+      <li class="list__item list__item--click">
+        <div class="list__button list__button--click">
+          <img src="img/bx-file.svg" alt="bx-file" class="list__img">
+          <a href="#" class="nav__link">Servicios</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#DDDDDD" class="list__arrow"><path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"/></svg>
+        </div>
+
+        <ul class="list__show">
+          <li class="list__inside">
+            <a href="#" class="nav__link nav__link--inside">Estoy dentro</a>
+          </li>
+          <li class="list__inside">
+            <a href="#" class="nav__link nav__link--inside">Estoy dentro</a>
+          </li>
+          <li class="list__inside">
+            <a href="#" class="nav__link nav__link--inside">Estoy dentro</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="list__item">
+        <div class="list__button">
+          <img src="img/bx-signal-5.svg" alt="bx-signal-5" class="list__img">
+          <a href="#" class="nav__link">Estadísticas</a>
+        </div>
+      </li>
+      <li class="list__item list__item--click">
+        <div class="list__button list__button--click">
+          <img src="img/bxs-bell-ring.svg" alt="bx-file" class="list__img">
+          <a href="#" class="nav__link">Notificaciones</a>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#DDDDDD" class="list__arrow"><path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"/></svg>
+        </div>
+
+        <ul class="list__show">
+          <li class="list__inside">
+            <a href="#" class="nav__link nav__link--inside">Estoy dentro</a>
+          </li>
+          <li class="list__inside">
+            <a href="#" class="nav__link nav__link--inside">Estoy dentro</a>
+          </li>
+          <li class="list__inside">
+            <a href="#" class="nav__link nav__link--inside">Estoy dentro</a>
+          </li>
+        </ul>
+      </li>
+
+      <li class="list__item">
+        <div class="list__button">
+          <img src="img/bxs-message-dots.svg" alt="bx-signal-5" class="list__img">
+          <a href="#" class="nav__link">Contacto</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <script src="main.js"></script>
+</body>
+</html>

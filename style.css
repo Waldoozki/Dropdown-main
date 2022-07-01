@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-primary: #222831;
+  --color-second: #30475E;
+  --color-text: #DDDDDD;
+  --color-var-1: #F05454;/* transition */
+}
+body {
+  background-color: var(--color-primary);
+  font-family: 'Montserrat', sans-serif;
+  color: var(--color-text);
+}
+.nav { /* Adaptar a móviles */
+  width: 300px;
+  /* position: relative; */
+}
+.nav__container {
+  background-color: #30475e30;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 60px;
+  z-index: -1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav__title {
+  padding-right: 35px;
+}
+.nav__menu {
+  display: block;
+}
+.nav__input, .nav__label {
+  display: none;
+}
+.nav__link {
+  text-decoration: none;
+  color: var(--color-text);
+  padding: 15px 0;
+  display: block;
+}
+.nav__link--inside:hover {
+  background: var(--color-primary);
+}
+.nav__link--inside {
+  border-radius: 5px 0 0 5px;
+  padding-left: 20px;
+}
+.list {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0 0 15px 0;
+  background-color: var(--color-second);
+}
+.list__item {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+/* .list__item--click {
+  cursor: pointer;
+} */
+.list__button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 70%;
+  margin: 0 auto;
+}
+.arrow .list__arrow {
+  transform: rotate(90deg);
+  fill: #F05454;
+}
+.list__arrow {
+  transition: transform .3s;
+  margin-left: auto;
+}
+.list__show {
+  width: 80%;
+  margin-left: auto;
+  border-left: 2px solid #F05454;
+  list-style: none;
+  height: 0;
+  transition: height .5s;
+}
+/* Responsive mobile */
+@media (max-width:425px) {
+  .nav {
+    width: 100%;
+    /* position: relative; */
+  }
+  .nav__container {
+    z-index: 0;
+    background-color: var(--color-primary);
+    justify-content: space-between;
+  }
+  .nav__label {
+    display: block;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  .nav__title {
+    margin-left: 15px;
+    cursor: pointer;
+  }
+  .list {
+    border-radius: 0 145px 0 0;
+    background: var(--color-primary);
+  }
+  .list {
+    clip-path: circle(0 at top right);
+    transition: clip-path 1s ease-in-out;
+    z-index: 1;
+  }
+  .nav__input:checked + .list {
+    clip-path: circle(150% at top right);
+    touch-action: none;
+  }
+}
+/* FIN */
